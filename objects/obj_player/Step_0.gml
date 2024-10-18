@@ -13,7 +13,7 @@ if keyboard_check(vk_right)
 	xsp = +1 	
 }
 
-if place_meeting(x, y+1, obj_block)
+if place_meeting(x, y+1, tiles)
 {
 	ysp=0
 	if keyboard_check(vk_up)
@@ -22,15 +22,6 @@ if place_meeting(x, y+1, obj_block)
 	}
 }
 
+show_debug_message([xsp, ysp]);
 
-move_and_collide(xsp, ysp, obj_block)
-
-if place_meeting(x, y, obj_Flag)
-{
-	room_goto_next()	
-}
-
-if place_meeting(x, y, obj_doomkrat)
-{
-	room_restart()	
-}
+move_and_collide(xsp, ysp, tiles)
