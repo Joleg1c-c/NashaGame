@@ -1,32 +1,73 @@
 /// @description Вставьте описание здесь
 // Вы можете записать свой код в этом редакторе
-move_y += 0.1
-move_x = 0
+move_y += 0.1; 
+
+if (grounded) move_x = 0;
+move_speed = walk_speed;
+
+if (keyboard_check(vk_shift))
+{
+	running = true;
+	move_speed = run_speed;
+}
+
+if (keyboard_check_released(vk_shift))
+{
+	running = false;
+}
 
 if keyboard_check(vk_left)
 {
-	move_x -= move_speed
+	if (grounded) move_x -= move_speed;
 }	
 
 if keyboard_check(vk_right)
 {
-	move_x += move_speed	
+	if (grounded) move_x += move_speed;
 }
 
-if place_meeting(x, y+1, obj_block)
+if keyboard_check(ord("R"))
 {
-	move_y = 0
+	room_restart();
+}
+
+if place_meeting(x, y + 1, obj_block)
+{
+	move_y = 0;
+	grounded = true;
 	
 	if keyboard_check(vk_up)
 	{
-		move_y -= jump_speed
+		move_y -= jump_speed;
 	}
+}
+else
+{
+	grounded = false;
+}
+
+
+if (move_y < 0) 
+{
+	falling = true;
 }
 
 if (move_x != 0)
 {
-	sprite_index = runSpr;
+	if (!grounded)
+	{
+		sprite_index = jumpSpr;
+	}
+	else 
+	{
+		if (running) sprite_index = runSpr;
+		else sprite_index = walkSpr;
+	}
 	image_xscale = sign(move_x);
+}
+else if (!grounded)
+{
+	sprite_index = fallSpr;
 }
 else
 {
@@ -37,11 +78,10 @@ move_and_collide(move_x, move_y, obj_block)
 
 if place_meeting(x, y, obj_Flag)
 {
-	room_goto_next()	
+	room_restart()	
 }
 
 if place_meeting(x, y, obj_doomkrat)
 {
 	room_restart()	
 }
-
