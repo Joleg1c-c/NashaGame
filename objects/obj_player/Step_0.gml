@@ -31,7 +31,7 @@ if keyboard_check(ord("R"))
 	room_restart();
 }
 
-if place_meeting(x, y + 1, obj_block)
+if place_meeting(x, y + 1, [tiles, obj_heart_zone])
 {
 	move_y = 0;
 	grounded = true;
@@ -78,12 +78,3 @@ else
 
 move_and_collide(move_x, move_y,  [tiles, obj_heart_zone])
 
-if place_meeting(x, y, obj_Flag)
-{
-	room_restart()	
-}
-
-if place_meeting(x, y, obj_doomkrat)
-{
-	room_restart()	
-}
