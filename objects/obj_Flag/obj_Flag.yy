@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_Flag",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_Flag",
   "overriddenProperties":[],
@@ -19,11 +21,17 @@
   "physicsLinearDamping":0.1,
   "physicsObject":false,
   "physicsRestitution":0.1,
-  "physicsSensor":false,
+  "physicsSensor":true,
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"xPossition","filters":[],"listItems":[],"multiselect":false,"name":"xPossition","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"yPossition","filters":[],"listItems":[],"multiselect":false,"name":"yPossition","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"roomName","filters":[
+        "GMRoom",
+      ],"listItems":[],"multiselect":false,"name":"roomName","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"Room__laziness","path":"rooms/Room__laziness/Room__laziness.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Room__laziness","varType":5,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

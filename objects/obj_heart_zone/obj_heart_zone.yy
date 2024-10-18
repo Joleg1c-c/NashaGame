@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_block",
+  "%Name":"obj_heart_zone",
   "eventList":[],
   "managed":true,
-  "name":"obj_block",
+  "name":"obj_heart_zone",
   "overriddenProperties":[],
   "parent":{
-    "name":"Объекты",
-    "path":"folders/Объекты.yy",
+    "name":"zone",
+    "path":"folders/Объекты/zone.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,9 +28,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"block",
-    "path":"sprites/block/block.yy",
+    "name":"sp_heart_zone",
+    "path":"sprites/sp_heart_zone/sp_heart_zone.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

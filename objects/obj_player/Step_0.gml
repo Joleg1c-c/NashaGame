@@ -1,5 +1,6 @@
 /// @description Вставьте описание здесь
 // Вы можете записать свой код в этом редакторе
+
 ysp += 0.1
 xsp = 0
 
@@ -13,7 +14,7 @@ if keyboard_check(vk_right)
 	xsp = +1 	
 }
 
-if place_meeting(x, y+1, obj_block)
+if place_meeting(x, y+1, [tiles, obj_heart_zone])
 {
 	ysp=0
 	if keyboard_check(vk_up)
@@ -22,15 +23,6 @@ if place_meeting(x, y+1, obj_block)
 	}
 }
 
+show_debug_message(tiles);
 
-move_and_collide(xsp, ysp, obj_block)
-
-if place_meeting(x, y, obj_Flag)
-{
-	room_goto_next()	
-}
-
-if place_meeting(x, y, obj_doomkrat)
-{
-	room_restart()	
-}
+move_and_collide(xsp, ysp, [tiles, obj_heart_zone])
