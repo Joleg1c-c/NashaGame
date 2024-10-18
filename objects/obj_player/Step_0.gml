@@ -46,6 +46,8 @@ else
 	grounded = false;
 }
 
+show_debug_message(tiles);
+
 
 if (move_y < 0) 
 {
@@ -74,7 +76,7 @@ else
 	sprite_index = idleSpr;
 }
 
-move_and_collide(move_x, move_y, obj_block)
+move_and_collide(move_x, move_y,  [tiles, obj_heart_zone])
 
 if place_meeting(x, y, obj_Flag)
 {
