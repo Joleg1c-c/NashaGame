@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"PlayerIDLE",
-    "path":"sprites/PlayerIDLE/PlayerIDLE.yy",
+    "name":"sPlayerIdle",
+    "path":"sprites/sPlayerIdle/sPlayerIdle.yy",
   },
   "spriteMaskId":null,
   "visible":true,
