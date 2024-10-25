@@ -3,12 +3,15 @@
 move_y += 0.1; 
 
 if (grounded) move_x = 0;
+else move_x *= 0.97
 move_speed = walk_speed;
 
 if (keyboard_check(vk_shift))
 {
-	running = true;
-	move_speed = run_speed;
+	if (grounded) {
+		running = true;
+		move_speed = run_speed;
+	}
 }
 
 if (keyboard_check_released(vk_shift))
@@ -19,11 +22,13 @@ if (keyboard_check_released(vk_shift))
 if keyboard_check(vk_left)
 {
 	if (grounded) move_x -= move_speed;
+	else move_x -= move_speed * 0.05;
 }	
 
 if keyboard_check(vk_right)
 {
 	if (grounded) move_x += move_speed;
+	else move_x += move_speed * 0.05;
 }
 
 if keyboard_check(ord("R"))
@@ -49,16 +54,24 @@ else
 show_debug_message(tiles);
 
 
-if (move_y < 0) 
+if (move_y > 0) 
 {
 	falling = true;
+}
+else 
+{
+	falling = false;
 }
 
 if (move_x != 0)
 {
-	if (!grounded)
+	if (!grounded && !falling)
 	{
 		sprite_index = jumpSpr;
+	}
+	else if (!grounded && falling) 
+	{
+		sprite_index = fallSpr;
 	}
 	else 
 	{
@@ -67,7 +80,7 @@ if (move_x != 0)
 	}
 	image_xscale = sign(move_x);
 }
-else if (!grounded)
+else if (falling)
 {
 	sprite_index = fallSpr;
 }
