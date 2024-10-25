@@ -36,6 +36,7 @@
   "resources":[
     {"id":{"name":"obj_doomkrat","path":"objects/obj_doomkrat/obj_doomkrat.yy",},},
     {"id":{"name":"obj_Flag","path":"objects/obj_Flag/obj_Flag.yy",},},
+    {"id":{"name":"obj_game_state","path":"objects/obj_game_state/obj_game_state.yy",},},
     {"id":{"name":"obj_heart_zone","path":"objects/obj_heart_zone/obj_heart_zone.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"Room__laziness","path":"rooms/Room__laziness/Room__laziness.yy",},},
