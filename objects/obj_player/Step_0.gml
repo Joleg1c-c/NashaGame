@@ -71,6 +71,14 @@ function state_jump() {
 	current_sprite = spr_jump;
 	dy *= 0.95;
 	
+	if (keyboard_check(vk_left)) {
+        dx = -walk_speed * 0.5;
+		image_xscale = -1;
+    } else if (keyboard_check(vk_right)) {
+        dx = walk_speed * 0.5;
+		image_xscale = 1;
+	}
+	
 	if (dy >= -0.5) {
 		dy = -dy;
 		current_state = PLAYER_STATE.FALL;
