@@ -34,6 +34,7 @@
   },
   "name":"NashaGame",
   "resources":[
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_doomkrat","path":"objects/obj_doomkrat/obj_doomkrat.yy",},},
     {"id":{"name":"obj_Flag","path":"objects/obj_Flag/obj_Flag.yy",},},
     {"id":{"name":"obj_heart_zone","path":"objects/obj_heart_zone/obj_heart_zone.yy",},},
