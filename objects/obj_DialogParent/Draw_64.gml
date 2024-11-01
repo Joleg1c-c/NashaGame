@@ -24,10 +24,8 @@ if(showing_dialog == true) {
 	draw_rectangle((border * 2), (border * 2), display_get_gui_width() - (border * 2), height - (border * 2), false);
 	
 	if(current_dialog.sprite != -1) {
-		//draw_sprite(current_dialog.sprite, 0, border * 3, border * 3);
-
-		//draw_sprite_ext(current_dialog.sprite, 0, border * 3, border * 3, _scale, _scale, 0, -1, 1);
-		draw_sprite_stretched(current_dialog.sprite, 0, border * 3, border * 3, _spriteWidth, _spriteWidth);
+		image_speed = 0.1;
+		draw_sprite_stretched(current_dialog.sprite, image_index, border * 3, border * 3, _spriteWidth, _spriteWidth);
 	}
 	
 	draw_set_color(c_white);
