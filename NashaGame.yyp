@@ -77,6 +77,7 @@
     {"id":{"name":"sPlayerIdle","path":"sprites/sPlayerIdle/sPlayerIdle.yy",},},
     {"id":{"name":"sPlayerJump","path":"sprites/sPlayerJump/sPlayerJump.yy",},},
     {"id":{"name":"sPlayerRun","path":"sprites/sPlayerRun/sPlayerRun.yy",},},
+    {"id":{"name":"sPlayerUse","path":"sprites/sPlayerUse/sPlayerUse.yy",},},
     {"id":{"name":"sPlayerWalk","path":"sprites/sPlayerWalk/sPlayerWalk.yy",},},
     {"id":{"name":"test","path":"sprites/test/test.yy",},},
     {"id":{"name":"testhz","path":"sprites/testhz/testhz.yy",},},
