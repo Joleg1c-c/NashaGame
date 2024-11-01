@@ -122,6 +122,10 @@ function state_use() {
 
 }
 
+function state_talk() {
+	current_sprite = spr_idle;
+}
+
 switch (current_state) {
     case PLAYER_STATE.IDLE:
         state_idle();
@@ -140,6 +144,9 @@ switch (current_state) {
 		break;
 	case PLAYER_STATE.USE:
 		state_use();
+		break;
+	case PLAYER_STATE.TALK:
+		state_talk();
 		break;
 }
 

@@ -12,6 +12,7 @@
     {"name":"inst_55081240","path":"rooms/Room__laziness/Room__laziness.yy",},
     {"name":"inst_70CEACC7","path":"rooms/Room__laziness/Room__laziness.yy",},
     {"name":"inst_76958A02","path":"rooms/Room__laziness/Room__laziness.yy",},
+    {"name":"inst_7D781222","path":"rooms/Room__laziness/Room__laziness.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -26,6 +27,7 @@
         {"$GMRInstance":"v1","%Name":"inst_55081240","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_55081240","objectId":{"name":"obj_heart_zone","path":"objects/obj_heart_zone/obj_heart_zone.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":1.0,"x":160.0,"y":96.0,},
         {"$GMRInstance":"v1","%Name":"inst_70CEACC7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_70CEACC7","objectId":{"name":"obj_game_state","path":"objects/obj_game_state/obj_game_state.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-32.0,"y":-32.0,},
         {"$GMRInstance":"v1","%Name":"inst_76958A02","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_76958A02","objectId":{"name":"Ob_money","path":"objects/Ob_money/Ob_money.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":96.0,},
+        {"$GMRInstance":"v1","%Name":"inst_7D781222","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7D781222","objectId":{"name":"obj_cat","path":"objects/obj_cat/obj_cat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":14.0,"y":80.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"colizion","depth":100,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"colizion","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":8,"SerialiseWidth":44,"TileCompressedData":[
           -5,-2147483648,1,0,-38,-2147483648,-9,0,-35,-2147483648,-3,0,-2,-2147483648,1,0,-38,-2147483648,-2,0,

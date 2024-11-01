@@ -11,12 +11,11 @@ enum PLAYER_STATE {
     RUN,
     JUMP,
     FALL,
-	USE
+	USE,
+	TALK
 }
 
 current_state = PLAYER_STATE.IDLE;
-
-canMove = true;
 
 move_speed = 0;
 walk_speed = 1;

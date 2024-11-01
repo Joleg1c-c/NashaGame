@@ -10,4 +10,4 @@ current_dialog = {};
 
 alpha = 0;
 
-obj_player.canMove = false;
+obj_player.current_state = PLAYER_STATE.TALK;

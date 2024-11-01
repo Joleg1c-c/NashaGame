@@ -3,7 +3,7 @@
 if(showing_dialog == false) {
 	if(dialog.count() <= 0) {
 		instance_destroy();
-		obj_player.canMove = true;
+		obj_player.current_state = PLAYER_STATE.IDLE;
 		return;
 	}
 	
