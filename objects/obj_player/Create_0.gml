@@ -3,13 +3,15 @@ spr_idle = sPlayerIdle;
 spr_run = sPlayerRun;
 spr_jump = sPlayerJump;
 spr_walk = sPlayerWalk;
+spr_use = sPlayerUse;
 
 enum PLAYER_STATE {
     IDLE,
 	WALK,
     RUN,
     JUMP,
-    FALL
+    FALL,
+	USE
 }
 
 current_state = PLAYER_STATE.IDLE;

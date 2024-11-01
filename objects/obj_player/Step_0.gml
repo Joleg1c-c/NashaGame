@@ -5,7 +5,9 @@ function state_idle() {
 	dx = 0;
 	dy = 0;
     if (keyboard_check(vk_left) || keyboard_check(vk_right)) {
-        current_state = PLAYER_STATE.WALK;
+        current_state = PLAYER_STATE.WALK; 
+	} else if (keyboard_check_pressed(ord("E"))) {
+		current_state = PLAYER_STATE.USE;
     } else if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up)) {
 		dy = -jump_speed;
         current_state = PLAYER_STATE.JUMP;
@@ -100,6 +102,24 @@ function state_fall() {
 	}
 }
 
+function state_use() {
+	current_sprite = spr_use;
+	
+	if (image_index <= sprite_get_number(current_sprite) / 2) {
+		return;	
+	}
+	
+	var _nearby_item = instance_nearest(x, y, Ob_money);
+	if ( _nearby_item != noone && distance_to_object(_nearby_item) < 15) {
+		instance_destroy(_nearby_item); 
+	}
+	 
+	
+	if (image_index >= sprite_get_number(current_sprite) - 1) {
+		current_state = PLAYER_STATE.IDLE;
+    }
+
+}
 
 switch (current_state) {
     case PLAYER_STATE.IDLE:
@@ -116,6 +136,9 @@ switch (current_state) {
 		break;
 	case PLAYER_STATE.FALL:
 		state_fall();
+		break;
+	case PLAYER_STATE.USE:
+		state_use();
 		break;
 }
 
