@@ -1,9 +1,9 @@
 spr_fall = sPlayerFall;
-spr_idle = sPlayerIdle;
+spr_idle = sMishaIdle;
 spr_run = sPlayerRun;
 spr_jump = sPlayerJump;
-spr_walk = sPlayerWalk;
-spr_use = sPlayerUse;
+spr_walk = sMishaWalk;
+spr_use = sMishaUse;
 
 enum PLAYER_STATE {
     IDLE,

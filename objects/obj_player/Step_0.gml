@@ -24,10 +24,10 @@ function state_walk() {
 		current_state = PLAYER_STATE.RUN;	
 	} else if (keyboard_check(vk_left)) {
         dx = -walk_speed;
-		image_xscale = -1;
+		image_xscale = -0.1;
     } else if (keyboard_check(vk_right)) {
         dx = walk_speed;
-		image_xscale = 1;
+		image_xscale = 0.1;
     } else {
         dx = 0;
         current_state = PLAYER_STATE.IDLE;
@@ -49,10 +49,10 @@ function state_run() {
 	
     if (keyboard_check(vk_left)) {
         dx = -run_speed;
-		image_xscale = -1;
+		image_xscale = -0.1;
     } else if (keyboard_check(vk_right)) {
         dx = run_speed;
-		image_xscale = 1;
+		image_xscale = 0.1;
     } else {
         dx = 0;
         current_state = PLAYER_STATE.IDLE;
@@ -77,11 +77,11 @@ function state_jump() {
 	if (keyboard_check(vk_left)) {
         dx -= walk_speed * 0.05;
 		dx = clamp(dx, -run_speed, run_speed);
-		image_xscale = -1;
+		image_xscale = -0.1;
     } else if (keyboard_check(vk_right)) {
         dx += walk_speed * 0.05;
 		dx = clamp(dx, -run_speed, run_speed);
-		image_xscale = 1;
+		image_xscale = 0.1;
 	}
 	
 	if (dy >= -0.5) {
@@ -105,12 +105,12 @@ function state_fall() {
 function state_use() {
 	current_sprite = spr_use;
 	
-	if (image_index <= sprite_get_number(current_sprite) / 2) {
-		return;	
-	}
+	//if (image_index <= sprite_get_number(current_sprite) / 2) {
+	//	return;	
+	//}
 	
 	var _nearby_item = instance_nearest(x, y, Ob_money);
-	if ( _nearby_item != noone && distance_to_object(_nearby_item) < 15) {
+	if ( _nearby_item != noone && distance_to_object(_nearby_item) < 50) {
 		instance_destroy(_nearby_item); 
 	}
 	 
