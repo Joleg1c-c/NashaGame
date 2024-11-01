@@ -4,7 +4,7 @@ function state_idle() {
     current_sprite = spr_idle;
 	dx = 0;
 	dy = 0;
-    if (keyboard_check_pressed(vk_left) || keyboard_check_pressed(vk_right)) {
+    if (keyboard_check(vk_left) || keyboard_check(vk_right)) {
         current_state = PLAYER_STATE.WALK;
     } else if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up)) {
 		dy = -jump_speed;
@@ -18,7 +18,7 @@ function state_idle() {
 function state_walk() {
 	current_sprite = spr_walk;
 	
-	if (keyboard_check_pressed(vk_shift)) {
+	if (keyboard_check(vk_shift)) {
 		current_state = PLAYER_STATE.RUN;	
 	} else if (keyboard_check(vk_left)) {
         dx = -walk_speed;
@@ -70,12 +70,15 @@ function state_run() {
 function state_jump() {
 	current_sprite = spr_jump;
 	dy *= 0.95;
+	dx *= 0.99;
 	
 	if (keyboard_check(vk_left)) {
-        dx = -walk_speed * 0.5;
+        dx -= walk_speed * 0.05;
+		dx = clamp(dx, -run_speed, run_speed);
 		image_xscale = -1;
     } else if (keyboard_check(vk_right)) {
-        dx = walk_speed * 0.5;
+        dx += walk_speed * 0.05;
+		dx = clamp(dx, -run_speed, run_speed);
 		image_xscale = 1;
 	}
 	
@@ -93,6 +96,7 @@ function state_fall() {
 		current_state = PLAYER_STATE.IDLE;
 	} else {
 		dy *= 1.05;
+		dy = clamp(dy, -jump_speed, jump_speed);
 	}
 }
 
