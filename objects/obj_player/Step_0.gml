@@ -6,7 +6,7 @@ if (grounded) move_x = 0;
 else move_x *= 0.97
 move_speed = walk_speed;
 
-if (keyboard_check(vk_shift))
+if (keyboard_check(vk_shift) and canMove)
 {
 	if (grounded) {
 		running = true;
@@ -19,13 +19,13 @@ if (keyboard_check_released(vk_shift))
 	running = false;
 }
 
-if keyboard_check(vk_left)
+if keyboard_check(vk_left) and canMove
 {
 	if (grounded) move_x -= move_speed;
 	else move_x -= move_speed * 0.05;
 }	
 
-if keyboard_check(vk_right)
+if keyboard_check(vk_right) and canMove
 {
 	if (grounded) move_x += move_speed;
 	else move_x += move_speed * 0.05;
@@ -41,7 +41,7 @@ if place_meeting(x, y + 1, [tiles, obj_heart_zone])
 	move_y = 0;
 	grounded = true;
 	
-	if keyboard_check(vk_up)
+	if keyboard_check(vk_up) and canMove
 	{
 		move_y -= jump_speed;
 	}
@@ -51,7 +51,7 @@ else
 	grounded = false;
 }
 
-show_debug_message(tiles);
+//show_debug_message(tiles);
 
 
 if (move_y > 0) 
@@ -90,4 +90,3 @@ else
 }
 
 move_and_collide(move_x, move_y,  [tiles, obj_heart_zone])
-

@@ -7,6 +7,7 @@ walkSpr = sPlayerWalk;
 running = false;
 grounded = false;
 falling = false;
+canMove = true;
 
 move_speed = 0;
 walk_speed = 1;
