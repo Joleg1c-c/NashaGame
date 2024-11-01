@@ -16,6 +16,8 @@ enum PLAYER_STATE {
 
 current_state = PLAYER_STATE.IDLE;
 
+canMove = true;
+
 move_speed = 0;
 walk_speed = 1;
 run_speed = 2;
