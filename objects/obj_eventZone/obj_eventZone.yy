@@ -38,5 +38,5 @@
     "path":"sprites/sp_eventZone/sp_eventZone.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
