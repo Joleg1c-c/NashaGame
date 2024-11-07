@@ -110,10 +110,18 @@ function state_use() {
 		return;	
 	}
 	
-	var _nearby_item = instance_nearest(x, y, Ob_money);
-	if ( _nearby_item != noone && distance_to_object(_nearby_item) < 15) {
-		instance_destroy(_nearby_item); 
+	var _tochItems = [Ob_money, Ob_chest, Obj_bottleOfWater];
+	
+	var tochFunction = function(_val, _index)
+	{
+		var _nearby_item = instance_nearest(x, y, _val);
+		if ( _nearby_item != noone && distance_to_object(_nearby_item) < 15) {
+			instance_destroy(_nearby_item); 
+		}
 	}
+	
+	array_foreach(_tochItems, tochFunction);
+	
 	 
 	
 	if (image_index >= sprite_get_number(current_sprite) - 1) {
@@ -124,6 +132,17 @@ function state_use() {
 
 function state_talk() {
 	current_sprite = spr_idle;
+	dx = 0;
+	if (place_meeting(x, y + 1, [tiles, obj_heart_zone])) {
+		dy = 0;
+	} else {
+		if (dy < 0){
+			dy = -dy;
+		}
+		
+		dy *= 1.05;
+		dy = clamp(dy, -jump_speed, jump_speed);
+	}
 }
 
 switch (current_state) {
