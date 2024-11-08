@@ -110,9 +110,26 @@ function state_use() {
 		return;	
 	}
 	
-	var _nearby_item = instance_nearest(x, y, Ob_money);
-	if ( _nearby_item != noone && distance_to_object(_nearby_item) < 15) {
-		instance_destroy(_nearby_item); 
+	var _nearby_object = instance_nearest(x, y, obj_interactable);
+	
+	if (_nearby_object != noone && distance_to_object(_nearby_object) < 15) {
+		switch (_nearby_object.object_index) {
+			
+			case obj_money:
+				if (array_length(inventory) < max_inventory_size) {
+					array_push(inventory, _nearby_object);
+					_nearby_object.x = -1000;
+					_nearby_object.y = -1000;
+				}
+                break;
+				
+			case obj_flag:
+				room_goto(_nearby_object.room_name);
+				x = _nearby_object.x_new;
+				y = _nearby_object.y_new;
+				break;
+		}
+		
 	}
 	 
 	

@@ -25,6 +25,9 @@ jump_speed = 3.75;
 dx = 0;
 dy = 0;
 
+inventory = [];
+max_inventory_size = 10; 
+
 layerID = layer_get_id("colizion");
 tiles = layer_tilemap_get_id(layerID);
 

@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Ob_money",
+  "%Name":"obj_interactable",
   "eventList":[],
   "managed":true,
-  "name":"Ob_money",
+  "name":"obj_interactable",
   "overriddenProperties":[],
   "parent":{
-    "name":"tochObjects",
-    "path":"folders/Объекты/tochObjects.yy",
+    "name":"Interactables",
+    "path":"folders/Объекты/Interactables.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"money",
-    "path":"sprites/money/money.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
