@@ -81,6 +81,7 @@
     {"id":{"name":"sPlayerRun","path":"sprites/sPlayerRun/sPlayerRun.yy",},},
     {"id":{"name":"sPlayerUse","path":"sprites/sPlayerUse/sPlayerUse.yy",},},
     {"id":{"name":"sPlayerWalk","path":"sprites/sPlayerWalk/sPlayerWalk.yy",},},
+    {"id":{"name":"spr_inv_cell","path":"sprites/spr_inv_cell/spr_inv_cell.yy",},},
     {"id":{"name":"test","path":"sprites/test/test.yy",},},
     {"id":{"name":"testhz","path":"sprites/testhz/testhz.yy",},},
     {"id":{"name":"testlast","path":"sprites/testlast/testlast.yy",},},

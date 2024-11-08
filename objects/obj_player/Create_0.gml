@@ -4,6 +4,7 @@ spr_run = sPlayerRun;
 spr_jump = sPlayerJump;
 spr_walk = sPlayerWalk;
 spr_use = sPlayerUse;
+spr_cell = spr_inv_cell ;
 
 enum PLAYER_STATE {
     IDLE,
