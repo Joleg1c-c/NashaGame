@@ -29,7 +29,7 @@ if(showing_dialog == true) {
 	}
 	
 	draw_set_color(c_white);
-
+	draw_set_font(front_GG);
 	draw_text_transformed(text_x, text_y, current_dialog.message, text_width, text_width, 0);
 	
 	alpha = lerp(alpha, 1, 0.06);
