@@ -54,6 +54,7 @@
     {"id":{"name":"Door","path":"sequences/Door/Door.yy",},},
     {"id":{"name":"angry","path":"sprites/angry/angry.yy",},},
     {"id":{"name":"background","path":"sprites/background/background.yy",},},
+    {"id":{"name":"big1","path":"sprites/big1/big1.yy",},},
     {"id":{"name":"block","path":"sprites/block/block.yy",},},
     {"id":{"name":"chest","path":"sprites/chest/chest.yy",},},
     {"id":{"name":"doomkrat","path":"sprites/doomkrat/doomkrat.yy",},},

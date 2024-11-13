@@ -17,7 +17,7 @@ enum PLAYER_STATE {
 current_state = PLAYER_STATE.IDLE;
 
 move_speed = 0;
-walk_speed = 1;
+walk_speed = 10;
 run_speed = 2;
 jump_speed = 3.75;
 

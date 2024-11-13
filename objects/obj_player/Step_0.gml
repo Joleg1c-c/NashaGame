@@ -24,10 +24,10 @@ function state_walk() {
 		current_state = PLAYER_STATE.RUN;	
 	} else if (keyboard_check(vk_left)) {
         dx = -walk_speed;
-		image_xscale = -0.1;
+		//image_xscale = -0.1;
     } else if (keyboard_check(vk_right)) {
         dx = walk_speed;
-		image_xscale = 0.1;
+		//image_xscale = 0.1;
     } else {
         dx = 0;
         current_state = PLAYER_STATE.IDLE;
@@ -45,14 +45,14 @@ function state_walk() {
 }
 
 function state_run() {
-	current_sprite = spr_run;
+	//current_sprite = spr_run;
 	
     if (keyboard_check(vk_left)) {
         dx = -run_speed;
-		image_xscale = -0.1;
+		//image_xscale = -0.1;
     } else if (keyboard_check(vk_right)) {
         dx = run_speed;
-		image_xscale = 0.1;
+		//image_xscale = 0.1;
     } else {
         dx = 0;
         current_state = PLAYER_STATE.IDLE;
@@ -77,11 +77,11 @@ function state_jump() {
 	if (keyboard_check(vk_left)) {
         dx -= walk_speed * 0.05;
 		dx = clamp(dx, -run_speed, run_speed);
-		image_xscale = -0.1;
+		//image_xscale = -0.1;
     } else if (keyboard_check(vk_right)) {
         dx += walk_speed * 0.05;
 		dx = clamp(dx, -run_speed, run_speed);
-		image_xscale = 0.1;
+		//image_xscale = 0.1;
 	}
 	
 	if (dy >= -0.5) {
@@ -91,7 +91,7 @@ function state_jump() {
 }
 
 function state_fall() {
-	current_sprite = spr_fall;
+	//current_sprite = spr_fall;
 	
 	if (place_meeting(x, y + 1, [tiles, obj_heart_zone])) {
 		dy = 0;
