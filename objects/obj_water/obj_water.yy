@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_bottleOfWater",
+  "%Name":"obj_water",
   "eventList":[],
   "managed":true,
-  "name":"Obj_bottleOfWater",
+  "name":"obj_water",
   "overriddenProperties":[],
   "parent":{
-    "name":"tochObjects",
-    "path":"folders/Объекты/tochObjects.yy",
+    "name":"Interactables",
+    "path":"folders/Объекты/Interactables.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_inventory_item",
+    "path":"objects/obj_inventory_item/obj_inventory_item.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

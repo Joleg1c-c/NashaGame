@@ -124,10 +124,6 @@ function state_use() {
 		
 	}
 	
-	array_foreach(_tochItems, tochFunction);
-	
-	 
-	
 	if (image_index >= sprite_get_number(current_sprite) - 1) {
 		current_state = PLAYER_STATE.IDLE;
     }
