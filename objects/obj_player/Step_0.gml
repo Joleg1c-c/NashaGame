@@ -105,12 +105,12 @@ function state_fall() {
 function state_use() {
 	current_sprite = spr_use;
 	
-	//if (image_index <= sprite_get_number(current_sprite) / 2) {
-	//	return;	
-	//}
+	if (image_index <= sprite_get_number(current_sprite) / 2) {
+		return;	
+	}
 	
 	var _nearby_item = instance_nearest(x, y, Ob_money);
-	if ( _nearby_item != noone && distance_to_object(_nearby_item) < 50) {
+	if ( _nearby_item != noone && distance_to_object(_nearby_item) < 200) {
 		instance_destroy(_nearby_item); 
 	}
 	 
