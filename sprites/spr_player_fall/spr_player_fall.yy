@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"sPlayerFall",
+  "%Name":"spr_player_fall",
   "bboxMode":2,
   "bbox_bottom":37,
   "bbox_left":2,
@@ -22,7 +22,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"3570cb9b-95fe-4486-a237-3a5141655ce2","blendMode":0,"displayName":"default","isLocked":false,"name":"3570cb9b-95fe-4486-a237-3a5141655ce2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"sPlayerFall",
+  "name":"spr_player_fall",
   "nineSlice":null,
   "origin":7,
   "parent":{
@@ -34,7 +34,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"sPlayerFall",
+    "%Name":"spr_player_fall",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -58,7 +58,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"sPlayerFall",
+    "name":"spr_player_fall",
     "playback":1,
     "playbackSpeed":4.0,
     "playbackSpeedType":0,
@@ -70,10 +70,10 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e7a0e7d3-0ec6-416c-9e38-cc3311f9895b","path":"sprites/sPlayerFall/sPlayerFall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e7a0e7d3-0ec6-416c-9e38-cc3311f9895b","path":"sprites/spr_player_fall/spr_player_fall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"257b4f38-3e71-485a-9490-1c9adbce2d45","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e9c460ea-a838-4ff3-8d26-f55037280bc2","path":"sprites/sPlayerFall/sPlayerFall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e9c460ea-a838-4ff3-8d26-f55037280bc2","path":"sprites/spr_player_fall/spr_player_fall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"085a76ac-281b-47c3-89fc-a3818ef24d41","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

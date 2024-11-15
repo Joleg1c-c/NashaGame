@@ -9,11 +9,13 @@ function state_idle() {
         current_state = PLAYER_STATE.WALK; 
 	} else if (keyboard_check_pressed(ord("E"))) {
 		current_state = PLAYER_STATE.USE;
+	} else if (keyboard_check_pressed(ord("R"))) {
+		current_state = PLAYER_STATE.THROW;
     } else if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up)) {
 		dy = -jump_speed;
         current_state = PLAYER_STATE.JUMP;
     } else if (!place_meeting(x, y + 1, [tiles, obj_heart_zone])) {
-		dy = 0.5;
+		dy = jump_speed / 8;
 		current_state = PLAYER_STATE.FALL;
 	}
 }
@@ -40,7 +42,7 @@ function state_walk() {
     } 
 	
 	if (!place_meeting(x, y + 1, [tiles, obj_heart_zone])) {
-		dy = 0.5;
+		dy = jump_speed / 8;
 		current_state = PLAYER_STATE.FALL;
 	}
 }
@@ -116,22 +118,9 @@ function state_use() {
 		return;
 	}
 	
-	if (_nearby_object.interactable != false && distance_to_object(_nearby_object) < 15) {
-		switch (_nearby_object.object_index) {
-			case obj_money:
-				if (array_length(inventory) < max_inventory_size) {
-					array_push(inventory, _nearby_object);
-					_nearby_object.interactable = false;
-					_nearby_object.visible = false;
-				}
-                break;
-				
-			case obj_flag:
-				room_goto(_nearby_object.room_name);
-				x = _nearby_object.x_new;
-				y = _nearby_object.y_new;
-				break;
-		}
+	
+	if (_nearby_object.is_interactable != false && distance_to_object(obj_interactable) < 15) {
+		_nearby_object.get_used(self);
 		
 	}
 	 
@@ -144,6 +133,35 @@ function state_use() {
 
 function state_talk() {
 	current_sprite = spr_idle;
+}
+
+function state_throw() {
+	if (inventory[current_item] == 0) {
+		current_state = PLAYER_STATE.IDLE;
+		return;
+	}
+	
+	current_sprite = spr_use;
+	
+	if (image_index >= sprite_get_number(current_sprite) - 1) {
+		inventory[current_item].x = x;
+		inventory[current_item].y = y - sprite_height / 2;
+		inventory[current_item].dx = sign(image_xscale) * throw_speed;
+		inventory[current_item].dy = -throw_speed;
+		inventory[current_item].visible = true;
+		inventory[current_item].is_interactable = true;
+		inventory[current_item] = 0;
+		current_state = PLAYER_STATE.IDLE;
+    }
+}
+
+for (var i = 0; i <= 9; i++) {
+    if (keyboard_check(ord(string(i)))) {
+		
+		current_item = (i == 0) ? 9 : (i - 1);
+        
+        break; 
+    }
 }
 
 switch (current_state) {
@@ -168,17 +186,13 @@ switch (current_state) {
 	case PLAYER_STATE.TALK:
 		state_talk();
 		break;
+	case PLAYER_STATE.THROW:
+		state_throw();
+		break;
 }
 
 move_and_collide(dx, dy,  [tiles, obj_heart_zone]);
 sprite_index = current_sprite;
-
-if keyboard_check(ord("R"))
-{
-	current_state = PLAYER_STATE.IDLE;
-	x = 100;
-	y = 100;
-}
 
 
 

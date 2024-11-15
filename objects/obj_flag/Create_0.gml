@@ -1,10 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-spr_highlight = spr_interactable;
-is_highlighted = false; 
-is_interactable = true;
+// Inherit the parent event
+event_inherited();
 
 function get_used(player) {
-	
+	room_goto(room_name);
+	player.x = x_new;
+	player.y = y_new;
 }
+

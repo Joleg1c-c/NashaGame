@@ -10,8 +10,8 @@
     "path":"folders/Объекты/Interactables.yy",
   },
   "parentObjectId":{
-    "name":"obj_interactable",
-    "path":"objects/obj_interactable/obj_interactable.yy",
+    "name":"obj_inventory_item",
+    "path":"objects/obj_inventory_item/obj_inventory_item.yy",
   },
   "persistent":true,
   "physicsAngularDamping":0.1,
