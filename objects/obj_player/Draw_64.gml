@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (current_state == PLAYER_STATE.TALK) {
+	return;
+}
+
 var x_offset = 16;
 var y_offset = 16;
 
