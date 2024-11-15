@@ -1,3 +1,3 @@
 event_inherited();
 
-dialog.add(popPixelCat, "а, голова..., нужно пойти, осмотреться! (WASD)");
+dialog.add(PlayerFace, "а, голова..., нужно пойти, осмотреться! (WASD)");

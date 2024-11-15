@@ -115,7 +115,7 @@ function state_use() {
 	var tochFunction = function(_val, _index)
 	{
 		var _nearby_item = instance_nearest(x, y, _val);
-		if ( _nearby_item != noone && distance_to_object(_nearby_item) < 15) {
+		if ( _nearby_item != noone && distance_to_object(_nearby_item) < 200) {
 			instance_destroy(_nearby_item); 
 		}
 
