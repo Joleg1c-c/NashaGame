@@ -123,6 +123,9 @@ function state_use() {
 		_nearby_object.get_used(self);
 		
 	}
+	
+	array_foreach(_tochItems, tochFunction);
+	
 	 
 	
 	if (image_index >= sprite_get_number(current_sprite) - 1) {
@@ -133,6 +136,17 @@ function state_use() {
 
 function state_talk() {
 	current_sprite = spr_idle;
+	dx = 0;
+	if (place_meeting(x, y + 1, [tiles, obj_heart_zone])) {
+		dy = 0;
+	} else {
+		if (dy < 0){
+			dy = -dy;
+		}
+		
+		dy *= 1.05;
+		dy = clamp(dy, -jump_speed, jump_speed);
+	}
 }
 
 function state_throw() {
