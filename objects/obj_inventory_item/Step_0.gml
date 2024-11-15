@@ -7,7 +7,7 @@ event_inherited();
 
 
 
-dx *= 0.98; 
+dx *= 0.985; 
 
 if (place_meeting(x + dx, y, [tiles, obj_heart_zone])) {
     dx = -dx;
