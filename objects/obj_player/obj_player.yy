@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPlayerIdle",
-    "path":"sprites/sPlayerIdle/sPlayerIdle.yy",
+    "name":"sMishaIdle",
+    "path":"sprites/sMishaIdle/sMishaIdle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

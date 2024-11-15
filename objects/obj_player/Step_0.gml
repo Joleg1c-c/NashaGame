@@ -118,6 +118,7 @@ function state_use() {
 		if ( _nearby_item != noone && distance_to_object(_nearby_item) < 15) {
 			instance_destroy(_nearby_item); 
 		}
+
 	}
 	
 	array_foreach(_tochItems, tochFunction);

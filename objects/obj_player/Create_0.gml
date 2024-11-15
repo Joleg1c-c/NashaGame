@@ -1,9 +1,9 @@
-spr_fall = sPlayerFall;
-spr_idle = sPlayerIdle;
-spr_run = sPlayerRun;
-spr_jump = sPlayerJump;
-spr_walk = sPlayerWalk;
-spr_use = sPlayerUse;
+spr_fall = sMishaIdle; // затычка
+spr_idle = sMishaIdle;
+spr_run = sMishaWalk;  // затычка
+spr_jump = sMishaIdle;  // затычка
+spr_walk = sMishaWalk;
+spr_use = sMishaUse;
 
 enum PLAYER_STATE {
     IDLE,
@@ -18,9 +18,9 @@ enum PLAYER_STATE {
 current_state = PLAYER_STATE.IDLE;
 
 move_speed = 0;
-walk_speed = 1;
-run_speed = 2;
-jump_speed = 3.75;
+walk_speed = 10;
+run_speed = 20;
+jump_speed = 15;
 
 dx = 0;
 dy = 0;
