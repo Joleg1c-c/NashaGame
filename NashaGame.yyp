@@ -96,7 +96,6 @@
     {"id":{"name":"background","path":"sprites/background/background.yy",},},
     {"id":{"name":"battleOfWater","path":"sprites/battleOfWater/battleOfWater.yy",},},
     {"id":{"name":"big1","path":"sprites/big1/big1.yy",},},
-    {"id":{"name":"block","path":"sprites/block/block.yy",},},
     {"id":{"name":"CapsulBroke","path":"sprites/CapsulBroke/CapsulBroke.yy",},},
     {"id":{"name":"cat","path":"sprites/cat/cat.yy",},},
     {"id":{"name":"chest","path":"sprites/chest/chest.yy",},},
