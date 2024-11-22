@@ -127,7 +127,9 @@ function state_use() {
 	}
 	
 	if (image_index >= sprite_get_number(current_sprite) - 1) {
-		current_state = PLAYER_STATE.IDLE;
+		if(current_state != PLAYER_STATE.TALK){
+			current_state = PLAYER_STATE.IDLE;
+		}
     }
 
 }

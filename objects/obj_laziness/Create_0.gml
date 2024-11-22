@@ -11,7 +11,8 @@ function get_used(player) {
 		var _tmp = player.inventory[i];
 		player.inventory[i] = 0;
 		instance_destroy(_tmp);
-		instance_create_depth(0, 0, -100, obj_Dialog_level_1_1);
+		instance_create_depth(0, 0, -100, obj_Dialog_level_1_3);
+		obj_EventManager.Next();
 	
 	}
 }
