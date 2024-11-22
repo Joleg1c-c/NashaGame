@@ -1,12 +1,12 @@
-spr_fall = spr_player_fall;
-spr_idle = spr_player_idle;
-spr_run = spr_player_run;
-spr_jump = spr_player_jump;
-spr_walk = spr_player_walk;
-spr_use = spr_player_use;
-spr_throw = spr_player_use;
 spr_cell = spr_inv_cell;
 spr_select = spr_inv_select_old;
+spr_fall = sMishaIdle; // затычка
+spr_idle = sMishaIdle;
+spr_run = sMishaWalk;  // затычка
+spr_jump = sMishaIdle;  // затычка
+spr_walk = sMishaWalk;
+spr_use = sMishaUse;
+
 
 enum PLAYER_STATE {
     IDLE,
@@ -23,9 +23,9 @@ current_state = PLAYER_STATE.IDLE;
 
 throw_speed = 2;
 move_speed = 0;
-walk_speed = 1;
-run_speed = 2;
-jump_speed = 3.75;
+walk_speed = 10;
+run_speed = 20;
+jump_speed = 15;
 
 dx = 0;
 dy = 0;

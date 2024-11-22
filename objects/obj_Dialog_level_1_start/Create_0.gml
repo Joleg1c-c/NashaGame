@@ -1,3 +1,3 @@
 event_inherited();
 
-dialog.add(popPixelCat, "Стрелочки управление E использовать R кидать Enter продолжить");
+dialog.add(PlayerFace, "а, голова..., нужно пойти, осмотреться! (WASD)");

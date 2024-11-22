@@ -4,10 +4,10 @@ if(showing_dialog == true) {
 	var height = display_get_gui_height() / 4;
 	var border = 2;
 	var padding = 5.5;
-	var text_width = 0.5;
+	var text_width = 3;
 	var _spriteWidth = height;
 	var text_x = _spriteWidth + (padding * 2);
-	var text_y = (height) / 2 - padding * 2 * 0;
+	var text_y = (height) / 2 - padding * 2;
 
 	
 	height += padding * 2;
