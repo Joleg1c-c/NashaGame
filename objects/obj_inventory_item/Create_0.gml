@@ -13,6 +13,8 @@ function get_used(player) {
 			player.inventory[i] = self;
 			is_interactable = false;
 			visible = false;
+			x = -100000;
+			y = -100000;
 			break;
 		}
 	}

@@ -11,9 +11,9 @@ function state_idle() {
 		current_state = PLAYER_STATE.USE;
 	} else if (keyboard_check_pressed(ord("R"))) {
 		current_state = PLAYER_STATE.THROW;
-    } else if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up)) {
-		dy = -jump_speed;
-        current_state = PLAYER_STATE.JUMP;
+    //} else if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up)) {
+	//	dy = -jump_speed;
+    //    current_state = PLAYER_STATE.JUMP;
     } else if (!place_meeting(x, y + 1, [tiles, obj_heart_zone])) {
 		dy = jump_speed / 8;
 		current_state = PLAYER_STATE.FALL;
@@ -23,9 +23,10 @@ function state_idle() {
 function state_walk() {
 	current_sprite = spr_walk;
 	
-	if (keyboard_check(vk_shift)) {
-		current_state = PLAYER_STATE.RUN;	
-	} else if (keyboard_check(vk_left)) {
+	//if (keyboard_check(vk_shift)) {
+	//	current_state = PLAYER_STATE.RUN;	
+	//} else
+	if (keyboard_check(vk_left)) {
         dx = -walk_speed;
 		image_xscale = -1;
     } else if (keyboard_check(vk_right)) {
@@ -36,10 +37,10 @@ function state_walk() {
         current_state = PLAYER_STATE.IDLE;
     }
 	
-	if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up)) {
-		dy = -jump_speed;
-        current_state = PLAYER_STATE.JUMP;
-    } 
+	//if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up)) {
+	//	dy = -jump_speed;
+    //    current_state = PLAYER_STATE.JUMP;
+    //} 
 	
 	if (!place_meeting(x, y + 1, [tiles, obj_heart_zone])) {
 		dy = jump_speed / 8;
@@ -61,10 +62,10 @@ function state_run() {
         current_state = PLAYER_STATE.IDLE;
     }
 	
-	if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up)) {
-		dy = -jump_speed;
-        current_state = PLAYER_STATE.JUMP;
-    }
+	//if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up)) {
+	//	dy = -jump_speed;
+    //    current_state = PLAYER_STATE.JUMP;
+    //}
 	
 	if (!place_meeting(x, y + 1, [tiles, obj_heart_zone])) {
 		dy = 0.5;
