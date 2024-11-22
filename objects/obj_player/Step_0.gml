@@ -114,6 +114,7 @@ function state_use() {
 	
 	var _nearby_object = instance_nearest(x, y, obj_interactable);
 	
+
 	if (_nearby_object == noone) {
 		return;
 	}
