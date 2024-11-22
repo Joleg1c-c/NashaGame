@@ -32,5 +32,5 @@
     "path":"sprites/sp_heart_zone/sp_heart_zone.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
