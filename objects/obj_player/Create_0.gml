@@ -21,7 +21,7 @@ enum PLAYER_STATE {
 
 current_state = PLAYER_STATE.IDLE;
 
-throw_speed = 2;
+throw_speed = 16;
 move_speed = 0;
 walk_speed = 10;
 run_speed = 20;

@@ -24,14 +24,14 @@ if (dy < 0) {
 		dy *= -1;
 	}
 } else if (dy > 0) {
-	dy *= 1.05;
+	dy *= 1.15;
 }
 
 if (place_meeting(x, y + dy, [tiles, obj_heart_zone])) {
     dy = -dy;
 }
 
-dx = clamp(dx, -4, 4);
-dy = clamp(dy, -4, 4);
+dx = clamp(dx, -16, 16);
+dy = clamp(dy, -16, 16);
 
 move_and_collide(dx, dy,  [tiles, obj_heart_zone]);

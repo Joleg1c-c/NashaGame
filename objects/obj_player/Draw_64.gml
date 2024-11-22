@@ -6,6 +6,7 @@ if (current_state == PLAYER_STATE.TALK) {
 }
 
 var cell_size = 64;
+var item_size = cell_size * 4;
 var x_offset = 96;
 var y_offset = 96;
 
@@ -34,8 +35,8 @@ for (var i = 0; i < max_inventory_size; i++) {
             0,                         
             x_offset + (i * cell_size),              
             y_offset,                         
-            cell_size / inventory[i].sprite_width, 
-            cell_size / inventory[i].sprite_height, 
+            item_size / inventory[i].sprite_width, 
+            item_size / inventory[i].sprite_height, 
             0,                          
             c_white,                   
             1                          
