@@ -3,6 +3,8 @@
   "%Name":"obj_eventZone",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_eventZone",
@@ -29,6 +31,10 @@
     {"$GMObjectProperty":"v1","%Name":"Dioalog","filters":[
         "GMObject",
       ],"listItems":[],"multiselect":false,"name":"Dioalog","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"obj_DialogParent","path":"objects/obj_DialogParent/obj_DialogParent.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"obj_DialogParent","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"start","filters":[],"listItems":[],"multiselect":false,"name":"start","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"idEvent","filters":[],"listItems":[],"multiselect":false,"name":"idEvent","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"idEventEnd","filters":[],"listItems":[],"multiselect":false,"name":"idEventEnd","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"Importent","filters":[],"listItems":[],"multiselect":false,"name":"Importent","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
@@ -38,5 +44,5 @@
     "path":"sprites/sp_eventZone/sp_eventZone.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
