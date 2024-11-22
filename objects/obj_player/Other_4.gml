@@ -1,2 +1,2 @@
-layerID = layer_get_id("colizion");
-tiles = layer_tilemap_get_id(layerID);
+layer_id = layer_get_id("collision");
+tiles = layer_tilemap_get_id(layer_id);
