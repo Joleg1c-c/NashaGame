@@ -1,4 +1,4 @@
-now_x = all_x[global.iEvent]
+now_x = all_x[iEvent]
 
 tochItem = noone;
 
@@ -20,7 +20,7 @@ array_foreach(now_x, function(_val, _index)
 		{
 			instance_create_depth(0, 0, -100, _val.dialog);
 			if(_val.importent){
-				Next();
+				Gonext();
 			}
 			else{
 				if (left_is_closest_number(_val.left_x, _val.right_x, obj_player.x)){

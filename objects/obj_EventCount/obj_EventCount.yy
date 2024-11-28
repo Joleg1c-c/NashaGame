@@ -1,22 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_EventMenger_1lvl",
+  "%Name":"obj_EventCount",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_EventMenger_1lvl",
+  "name":"obj_EventCount",
   "overriddenProperties":[],
   "parent":{
-    "name":"level_1",
-    "path":"folders/Объекты/DialogAndEvet/level_1.yy",
+    "name":"DialogAndEvet",
+    "path":"folders/Объекты/DialogAndEvet.yy",
   },
-  "parentObjectId":{
-    "name":"obj_EventManager",
-    "path":"objects/obj_EventManager/obj_EventManager.yy",
-  },
-  "persistent":false,
+  "parentObjectId":null,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,

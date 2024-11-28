@@ -67,6 +67,7 @@
     {"id":{"name":"obj_DialogTest","path":"objects/obj_DialogTest/obj_DialogTest.yy",},},
     {"id":{"name":"obj_doomkrat","path":"objects/obj_doomkrat/obj_doomkrat.yy",},},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
+    {"id":{"name":"obj_EventCount","path":"objects/obj_EventCount/obj_EventCount.yy",},},
     {"id":{"name":"obj_EventManager","path":"objects/obj_EventManager/obj_EventManager.yy",},},
     {"id":{"name":"obj_EventMenger_1lvl","path":"objects/obj_EventMenger_1lvl/obj_EventMenger_1lvl.yy",},},
     {"id":{"name":"obj_eventZone","path":"objects/obj_eventZone/obj_eventZone.yy",},},

@@ -1,5 +1,9 @@
 event_inherited();
 
+function Gonext(){
+	obj_EventCount.Next_1lvl();
+}
+
 spavn_x = [760, 1000]
 door_left_x = [250, 760];
 door_right_x = [4950, 5566];
