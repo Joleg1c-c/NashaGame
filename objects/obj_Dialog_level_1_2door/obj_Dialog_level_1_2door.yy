@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Dialog_level_1_1door",
+  "%Name":"obj_Dialog_level_1_2door",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Dialog_level_1_1door",
+  "name":"obj_Dialog_level_1_2door",
   "overriddenProperties":[],
   "parent":{
     "name":"level_1",

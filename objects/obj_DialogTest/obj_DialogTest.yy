@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"dialogs",
-    "path":"folders/Объекты/Dialog/dialogs.yy",
+    "path":"folders/Объекты/DialogAndEvent/dialogs.yy",
   },
   "parentObjectId":{
     "name":"obj_DialogParent",

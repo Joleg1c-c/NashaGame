@@ -9,8 +9,8 @@
   "name":"obj_EventManager",
   "overriddenProperties":[],
   "parent":{
-    "name":"Dialog",
-    "path":"folders/Объекты/Dialog.yy",
+    "name":"DialogAndEvent",
+    "path":"folders/Объекты/DialogAndEvent.yy",
   },
   "parentObjectId":null,
   "persistent":true,
