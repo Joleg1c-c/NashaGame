@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"level_1",
-    "path":"folders/Объекты/DialogAndEvent/level_1.yy",
+    "path":"folders/Объекты/DialogAndEvet/level_1.yy",
   },
   "parentObjectId":{
     "name":"obj_EventManager",

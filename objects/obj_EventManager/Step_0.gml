@@ -34,18 +34,3 @@ array_foreach(now_x, function(_val, _index)
 		}
 	}
 });
-
-function TochItem(_item){
-	array_foreach(now_x, function(_val, _index)
-	{
-		if (!_val.coord){
-			show_debug_message(_val.item + " " + _item);
-			if (_val.item == _item){
-				instance_create_depth(0, 0, -100, _val.dialog);
-				if(_val.importent){
-					Next();
-				}
-			}
-		}
-	});	
-};

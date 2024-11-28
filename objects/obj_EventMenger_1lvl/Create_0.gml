@@ -21,12 +21,14 @@ all_x = [
 [
 	{coord: true, left_x: door_left_x[0], right_x: door_left_x[1], dialog: obj_Dialog_level_1_2door, importent: false},
 	{coord: true, left_x: door_right_x[0], right_x: door_right_x[1], dialog: obj_Dialog_level_1_2door, importent: false},
-	{coord: false, item: ALL_EVENT_ITEMS.LAZINESS, dialog: obj_Dialog_level_1_2door, importent: true},
+	{coord: false, with_item: ALL_EVENT_ITEMS.BOTELWATER, object: ALL_EVENT_ITEMS.LAZINESS, dialog: obj_Dialog_level_1_3, importent: true},
 	
 ],
 // 3 - Не даем покинуть локацию с неправильной стороны
 [
 	{coord: true, left_x: door_left_x[0], right_x: door_left_x[1], dialog: obj_Dialog_level_1_bad_door_1, importent: false},
+	{coord: false, with_item: ALL_EVENT_ITEMS.NONE, object: ALL_EVENT_ITEMS.LAZINESS, dialog: obj_Dialog_level_1_4Hrap, importent: false},
+
 ],
 
 
