@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_DialogTest",
+  "%Name":"obj_Dialog_level_2_door",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_DialogTest",
+  "name":"obj_Dialog_level_2_door",
   "overriddenProperties":[],
   "parent":{
-    "name":"dialogs",
-    "path":"folders/Объекты/DialogAndEvet/dialogs.yy",
+    "name":"level_2",
+    "path":"folders/Объекты/DialogAndEvet/level_2.yy",
   },
   "parentObjectId":{
     "name":"obj_DialogParent",

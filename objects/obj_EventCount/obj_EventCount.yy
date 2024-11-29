@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_DialogTest",
+  "%Name":"obj_EventCount",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_DialogTest",
+  "name":"obj_EventCount",
   "overriddenProperties":[],
   "parent":{
-    "name":"dialogs",
-    "path":"folders/Объекты/DialogAndEvet/dialogs.yy",
+    "name":"DialogAndEvet",
+    "path":"folders/Объекты/DialogAndEvet.yy",
   },
-  "parentObjectId":{
-    "name":"obj_DialogParent",
-    "path":"objects/obj_DialogParent/obj_DialogParent.yy",
-  },
-  "persistent":false,
+  "parentObjectId":null,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
