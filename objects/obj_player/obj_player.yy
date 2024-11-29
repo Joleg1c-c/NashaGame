@@ -15,7 +15,7 @@
     "path":"folders/Объекты/player.yy",
   },
   "parentObjectId":null,
-  "persistent":true,
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -33,7 +33,10 @@
     {"x":0.0,"y":48.0,},
   ],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"canJump","filters":[],"listItems":[],"multiselect":false,"name":"canJump","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"texture","filters":[],"listItems":[],"multiselect":false,"name":"texture","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"sMishaIdle","path":"sprites/sMishaIdle/sMishaIdle.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sMishaIdle","varType":5,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
@@ -42,5 +45,5 @@
     "path":"sprites/sMishaIdle/sMishaIdle.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

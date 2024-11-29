@@ -5,15 +5,15 @@ function state_idle() {
     current_sprite = spr_idle;
 	dx = 0;
 	dy = 0;
-    if (keyboard_check(vk_left) || keyboard_check(vk_right)) {
+    if ((keyboard_check(vk_left) || keyboard_check(vk_right))) {
         current_state = PLAYER_STATE.WALK; 
-	} else if (keyboard_check_pressed(ord("E"))) {
+	} else if (keyboard_check_pressed(ord("E")) and canJump) {
 		current_state = PLAYER_STATE.USE;
-	} else if (keyboard_check_pressed(ord("R"))) {
+	} else if (keyboard_check_pressed(ord("R"))and canJump) {
 		current_state = PLAYER_STATE.THROW;
-    //} else if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up)) {
-	//	dy = -jump_speed;
-    //    current_state = PLAYER_STATE.JUMP;
+    } else if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up) and canJump) {
+		dy = -jump_speed;
+        current_state = PLAYER_STATE.JUMP;
     } else if (!place_meeting(x, y + 1, [tiles, obj_heart_zone])) {
 		dy = jump_speed / 8;
 		current_state = PLAYER_STATE.FALL;

@@ -17,7 +17,7 @@ all_x = [
 ],
 // 1 - взаимодействие с ленью 1 попытка разбудить
 [
-	{coord: true, left_x: door_right_x[0], right_x: door_right_x[1], dialog: obj_Dialog_level_2_door, importent: false},
+	{coord: true, left_x: door_right_x[0], right_x: door_right_x[1], dialog: obj_Dialog_level_2_4, importent: false},
 	{coord: true, left_x: table_x[0], right_x: table_x[1], dialog: obj_Dialog_level_2_1, importent: true},
 ],
 // 2 - взаимодействие с ждём, пока окинут водой

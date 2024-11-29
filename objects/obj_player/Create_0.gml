@@ -1,9 +1,9 @@
 spr_cell = spr_inv_cell;
 spr_select = spr_inv_select_old;
-spr_fall = sMishaIdle; // затычка
-spr_idle = sMishaIdle;
+spr_fall = texture; // затычка
+spr_idle = texture;
 spr_run = sMishaWalk;  // затычка
-spr_jump = sMishaIdle;  // затычка
+spr_jump = texture;  // затычка
 spr_walk = sMishaWalk;
 spr_use = sMishaUse;
 

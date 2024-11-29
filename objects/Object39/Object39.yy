@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_soupe",
+  "%Name":"Object39",
   "eventList":[],
   "managed":true,
-  "name":"obj_soupe",
+  "name":"Object39",
   "overriddenProperties":[],
   "parent":{
     "name":"Interactables",
