@@ -2,7 +2,9 @@
 enum ALL_EVENT_ITEMS{
 	LAZINESS,
 	BOTELWATER,
-	NONE
+	NONE,
+	SOUPE,
+	GLUTTONY
 }
 function Gonext(){
 	obj_EventCount.Next_1lvl();

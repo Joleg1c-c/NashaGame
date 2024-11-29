@@ -4,7 +4,7 @@ function Gonext(){
 	obj_EventCount.Next_1lvl();
 }
 
-spavn_x = [760, 1000]
+spavn_x = [400, 1000]
 door_left_x = [250, 760];
 door_right_x = [4950, 5566];
 table_x = [1430, 2300];
@@ -17,7 +17,6 @@ all_x = [
 ],
 // 1 - взаимодействие с ленью 1 попытка разбудить
 [
-	{coord: true, left_x: door_left_x[0], right_x: door_left_x[1], dialog: obj_Dialog_level_1_1door, importent: false},
 	{coord: true, left_x: door_right_x[0], right_x: door_right_x[1], dialog: obj_Dialog_level_1_1door, importent: false},
 	{coord: true, left_x: table_x[0], right_x: table_x[1], dialog: obj_Dialog_level_1_1, importent: true},
 ],
