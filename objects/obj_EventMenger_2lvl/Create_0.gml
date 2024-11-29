@@ -30,7 +30,7 @@ all_x = [
 ],
 // 3 - Не даем покинуть локацию с неправильной стороны
 [
-	{coord: true, left_x: door_left_x[0], right_x: door_left_x[1], dialog: obj_Dialog_level_1_bad_door_1, importent: false},
+	{coord: true, left_x: door_right_x[0], right_x: door_right_x[1], dialog: obj_Dialog_level_1_bad_door_1, importent: false},
 
 ],
 

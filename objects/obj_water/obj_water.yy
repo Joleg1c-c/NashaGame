@@ -13,7 +13,7 @@
     "name":"obj_inventory_item",
     "path":"objects/obj_inventory_item/obj_inventory_item.yy",
   },
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
