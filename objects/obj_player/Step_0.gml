@@ -109,23 +109,6 @@ function state_fall() {
 function state_use() {
 	current_sprite = spr_use;
 	
-	if (image_index <= sprite_get_number(current_sprite) / 2) {
-		return;	
-	}
-	
-	var _nearby_object = instance_nearest(x, y, obj_interactable);
-	
-
-	if (_nearby_object == noone) {
-		return;
-	}
-	
-	
-	if (_nearby_object.is_interactable != false && distance_to_object(obj_interactable) < 15) {
-		_nearby_object.get_used(self);
-		
-	}
-	
 	if (image_index >= sprite_get_number(current_sprite) - 1) {
 		if(current_state != PLAYER_STATE.TALK){
 			current_state = PLAYER_STATE.IDLE;

@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"Room__laziness",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/Room__laziness/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
