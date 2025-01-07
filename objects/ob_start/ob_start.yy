@@ -1,20 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_gluttony",
+  "%Name":"ob_start",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_gluttony",
+  "name":"ob_start",
   "overriddenProperties":[],
   "parent":{
-    "name":"img",
-    "path":"folders/Объекты/img.yy",
+    "name":"Menu",
+    "path":"folders/Объекты/Menu.yy",
   },
-  "parentObjectId":{
-    "name":"obj_interactable",
-    "path":"objects/obj_interactable/obj_interactable.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Glutt",
-    "path":"sprites/Glutt/Glutt.yy",
+    "name":"s_play",
+    "path":"sprites/s_play/s_play.yy",
   },
   "spriteMaskId":null,
   "visible":true,

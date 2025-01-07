@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"laziness",
-    "path":"sprites/laziness/laziness.yy",
+    "name":"Lazy",
+    "path":"sprites/Lazy/Lazy.yy",
   },
   "spriteMaskId":null,
   "visible":true,
