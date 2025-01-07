@@ -22,15 +22,15 @@ all_x = [
 ],
 // 2 - взаимодействие с ждём, пока окинут водой
 [
-	{coord: true, left_x: door_right_x[0], right_x: door_right_x[1], dialog: obj_Dialog_level_1_2door, importent: false},
+	//{coord: true, left_x: door_right_x[0], right_x: door_right_x[1], dialog: obj_Dialog_level_2_door, importent: false},
 	{coord: false, with_item: ALL_EVENT_ITEMS.NONE, object: ALL_EVENT_ITEMS.GLUTTONY, dialog: obj_Dialog_level_2_2, importent: false},
-		{coord: false, with_item: ALL_EVENT_ITEMS.SOUPE, object: ALL_EVENT_ITEMS.GLUTTONY, dialog: obj_Dialog_level_2_3, importent: true},
+	{coord: false, with_item: ALL_EVENT_ITEMS.SOUPE, object: ALL_EVENT_ITEMS.GLUTTONY, dialog: obj_Dialog_level_2_3, importent: true},
 
 	
 ],
 // 3 - Не даем покинуть локацию с неправильной стороны
 [
-	{coord: true, left_x: door_right_x[0], right_x: door_right_x[1], dialog: obj_Dialog_level_1_bad_door_1, importent: false},
+	//{coord: true, left_x: door_right_x[0], right_x: door_right_x[1], dialog: obj_Dialog_level_1_bad_door_1, importent: false},
 
 ],
 
