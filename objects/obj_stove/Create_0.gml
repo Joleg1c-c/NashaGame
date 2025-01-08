@@ -28,14 +28,20 @@ cook = undefined;
 selected = 0;
 
 function get_used(player) {
-	if (cooking) {
-		player.current_state = PLAYER_STATE.IDLE;
-		cooking = false;
-		cook = undefined;
-		return;
-	}
-	
-	player.current_state = PLAYER_STATE.TALK;
-	cooking = true;
-	cook = player;
+  if (cooking) {
+    player.current_state = PLAYER_STATE.IDLE;
+    cooking = false;
+    cook = undefined;
+    return;
+  }
+  
+  player.current_state = PLAYER_STATE.TALK;
+  cooking = true;
+  cook = player;
+  for (var i = 0; i < grid_size; i++) {
+    for (var j = 0; j < grid_size; j++) {
+      cell_states[i][j] = 0; // 0 = normal, 1 = hovered, 2 = clicked
+    }
+  }
+  selected = 0;
 }

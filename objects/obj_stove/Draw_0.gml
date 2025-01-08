@@ -13,7 +13,9 @@ draw_text(x - 110, y - 110, string(selected));
 var grid_size = 4;
 var cell_size = 96; 
 
-draw_text(x + grid_size * cell_size / 4, y - 120, "R для броска");
+depth = -100000;
+
+draw_text(x + grid_size * cell_size / 5, y - 120, "R для выбора ингридиента");
 
 for (var i = 0; i < grid_size; i++) {
     for (var j = 0; j < grid_size; j++) {
