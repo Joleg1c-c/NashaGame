@@ -1,3 +1,4 @@
 event_inherited();
 
-dialog.add(PlayerFace, "а, голова..., нужно пойти, осмотреться! (стрелочки)");
+dialog.add(PlayerFace, "а, голова... (ENTER)");
+dialog.add(PlayerFace, "нужно пойти, осмотреться! (стрелочки)");
