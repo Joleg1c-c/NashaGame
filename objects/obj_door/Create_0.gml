@@ -6,7 +6,7 @@ event_inherited();
 
 function get_used(player) {
 	room_goto(room_name);
-	player.depth = 1;
+	player.depth = -1000;
 	player.x = x_new;
 	player.y = y_new;
 }

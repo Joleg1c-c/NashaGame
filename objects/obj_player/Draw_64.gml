@@ -5,10 +5,10 @@ if (current_state == PLAYER_STATE.TALK) {
 	return;
 }
 
-var cell_size = 64;
+var cell_size = 48;
 var item_size = cell_size * 3;
-var x_offset = 96;
-var y_offset = 96;
+var x_offset = 64;
+var y_offset = 64;
 
 
 

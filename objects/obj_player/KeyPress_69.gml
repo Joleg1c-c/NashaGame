@@ -8,6 +8,6 @@ if (_nearby_object == noone) {
 }
 	
 	
-if (_nearby_object.is_interactable != false && distance_to_object(obj_interactable) < 15) {
+if (_nearby_object.is_interactable != false && distance_to_object(obj_interactable) < 55) {
 	_nearby_object.get_used(self);
 }

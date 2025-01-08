@@ -14,10 +14,11 @@ function state_idle() {
     //} else if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up)) {
 	//	dy = -jump_speed;
     //    current_state = PLAYER_STATE.JUMP;
-    } else if (!place_meeting(x, y + 1, [tiles, obj_heart_zone])) {
-		dy = jump_speed / 8;
-		current_state = PLAYER_STATE.FALL;
-	}
+    } 
+	//else if (!place_meeting(x, y + 1, [tiles, obj_heart_zone])) {
+	//	dy = jump_speed / 8;
+	//	current_state = PLAYER_STATE.FALL;
+	//}
 }
 
 function state_walk() {
@@ -42,10 +43,10 @@ function state_walk() {
     //    current_state = PLAYER_STATE.JUMP;
     //} 
 	
-	if (!place_meeting(x, y + 1, [tiles, obj_heart_zone])) {
-		dy = jump_speed / 8;
-		current_state = PLAYER_STATE.FALL;
-	}
+	//if (!place_meeting(x, y + 1, [tiles, obj_heart_zone])) {
+	//	dy = jump_speed / 8;
+	//	current_state = PLAYER_STATE.FALL;
+	//}
 }
 
 function state_run() {
