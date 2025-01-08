@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_anger",
+  "%Name":"obj_EventMenger_3lvl",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_anger",
+  "name":"obj_EventMenger_3lvl",
   "overriddenProperties":[],
   "parent":{
-    "name":"img",
-    "path":"folders/Объекты/img.yy",
+    "name":"level_3",
+    "path":"folders/Объекты/DialogAndEvet/level_3.yy",
   },
   "parentObjectId":{
-    "name":"obj_interactable",
-    "path":"objects/obj_interactable/obj_interactable.yy",
+    "name":"obj_EventManager",
+    "path":"objects/obj_EventManager/obj_EventManager.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -32,10 +33,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Angr",
-    "path":"sprites/Angr/Angr.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

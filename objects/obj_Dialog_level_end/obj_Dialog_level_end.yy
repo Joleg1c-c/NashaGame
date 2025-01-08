@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_anger",
+  "%Name":"obj_Dialog_level_end",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_anger",
+  "name":"obj_Dialog_level_end",
   "overriddenProperties":[],
   "parent":{
-    "name":"img",
-    "path":"folders/Объекты/img.yy",
+    "name":"end",
+    "path":"folders/Объекты/DialogAndEvet/end.yy",
   },
   "parentObjectId":{
-    "name":"obj_interactable",
-    "path":"objects/obj_interactable/obj_interactable.yy",
+    "name":"obj_DialogParent",
+    "path":"objects/obj_DialogParent/obj_DialogParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -32,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Angr",
-    "path":"sprites/Angr/Angr.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

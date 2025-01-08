@@ -7,7 +7,7 @@ function Gonext(){
 spavn_x = [760, 1000]
 door_left_x = [250, 760];
 door_right_x = [4950, 5566];
-table_x = [3360, 3838];
+table_x = [2050, 2160];
 
 
 all_x = [
