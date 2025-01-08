@@ -15,6 +15,8 @@ function get_used(player) {
 			visible = false;
 			x = -100000;
 			y = -100000;
+			audio_play_sound(pickupsound, 1, false);
+			audio_sound_gain(pickupsound, 0.7, 0);
 			break;
 		}
 	}

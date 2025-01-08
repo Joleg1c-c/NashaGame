@@ -6,5 +6,6 @@ is_highlighted = false;
 is_interactable = true;
 
 function get_used(player) {
-	
+	audio_play_sound(pickupsound, 1, false);
+	audio_sound_gain(pickupsound, 0.7, 0);
 }
