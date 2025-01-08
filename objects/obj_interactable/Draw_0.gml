@@ -13,7 +13,7 @@ if (is_highlighted) {
 		x,
 		y - sprite_height / 2 - y_offset,
 		_icon_size / sprite_get_width(spr_highlight), 
-        _icon_size / sprite_get_height(spr_highlight), 
+        _icon_size / sprite_get_width(spr_highlight), 
 		0,
 		c_white,
 		1
