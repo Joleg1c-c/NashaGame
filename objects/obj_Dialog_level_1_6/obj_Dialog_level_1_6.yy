@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Dialog_level_2_1",
+  "%Name":"obj_Dialog_level_1_6",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Dialog_level_2_1",
+  "name":"obj_Dialog_level_1_6",
   "overriddenProperties":[],
   "parent":{
-    "name":"level_2",
-    "path":"folders/Объекты/DialogAndEvet/level_2.yy",
+    "name":"level_1",
+    "path":"folders/Объекты/DialogAndEvet/level_1.yy",
   },
   "parentObjectId":{
-    "name":"obj_Dialog_Intaraction",
-    "path":"objects/obj_Dialog_Intaraction/obj_Dialog_Intaraction.yy",
+    "name":"obj_DialogParent",
+    "path":"objects/obj_DialogParent/obj_DialogParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

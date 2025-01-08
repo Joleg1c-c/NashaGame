@@ -31,8 +31,19 @@ all_x = [
 [
 	{coord: true, left_x: door_left_x[0], right_x: door_left_x[1], dialog: obj_Dialog_level_1_bad_door_1, importent: false},
 	{coord: false, with_item: ALL_EVENT_ITEMS.NONE, object: ALL_EVENT_ITEMS.LAZINESS, dialog: obj_Dialog_level_1_4Hrap, importent: false},
+	{coord: false, with_item: ALL_EVENT_ITEMS.BOTELWATER, object: ALL_EVENT_ITEMS.LAZINESS, dialog: obj_Dialog_level_1_EXTRA, importent: false},
 
 ],
+[
+	{coord: true, left_x: door_left_x[0], right_x: door_left_x[1], dialog: obj_Dialog_level_1_bad_door_1, importent: false},
+	{coord: false, with_item: ALL_EVENT_ITEMS.NONE, object: ALL_EVENT_ITEMS.LAZINESS, dialog: obj_Dialog_level_1_5, importent: true},
+	{coord: false, with_item: ALL_EVENT_ITEMS.BOTELWATER, object: ALL_EVENT_ITEMS.LAZINESS, dialog: obj_Dialog_level_1_EXTRA, importent: false},
 
+],
+[
+	{coord: true, left_x: door_left_x[0], right_x: door_left_x[1], dialog: obj_Dialog_level_1_bad_door_1, importent: false},
+	{coord: false, with_item: ALL_EVENT_ITEMS.NONE, object: ALL_EVENT_ITEMS.LAZINESS, dialog: obj_Dialog_level_1_6, importent: false},
+	{coord: false, with_item: ALL_EVENT_ITEMS.BOTELWATER, object: ALL_EVENT_ITEMS.LAZINESS, dialog: obj_Dialog_level_1_EXTRA, importent: false},
 
+],
 ];

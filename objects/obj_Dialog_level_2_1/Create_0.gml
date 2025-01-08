@@ -15,7 +15,7 @@ dialog.add(PlayerFace, "Нам нужно починить электрику!")
 dialog.add(PlayerFace, "Перестань есть, пошли в инженерный.");
 dialog.add(GluttFace, "*чавк чавк*");
 dialog.add(GluttFace, "Пока я не наемся, никуда не пойду.");
-dialog.add(GluttFace, "А еда тут такая… Скромненькая. ");
+dialog.add(GluttFace, "А еда тут такая... Скромненькая. ");
 dialog.add(PlayerFace, "Ну и что же тебе подавать?");
 dialog.add(PlayerFace, "Ты такими темпами всю провизию за пару часов съешь,");
 dialog.add(PlayerFace, "а ее тут лет на десять вперед! ");
@@ -46,5 +46,5 @@ dialog.add(GluttFace, "Даже я припоминаю, что овощи он�
 dialog.add(PlayerFace, "Разве я его помнил?");
 dialog.add(GluttFace, "*пых пых* Ага. Ты же других, кроме меня, тоже наделал?");
 dialog.add(GluttFace, "Поспрашивай у них, может что-то в памяти осталось.");
-dialog.add(PlayerFace, "Поспрашивать-то поспрашиваю… Но почему я-то сам не помню?..");
+dialog.add(PlayerFace, "Поспрашивать-то поспрашиваю... Но почему я-то сам не помню?..");
 dialog.add(GluttFace, "*пых пых* А черт его знает.");
