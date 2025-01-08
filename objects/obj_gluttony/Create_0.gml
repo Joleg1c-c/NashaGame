@@ -15,6 +15,14 @@ function get_used(player) {
 		item = ALL_EVENT_ITEMS.SOUPE
 		obj_EventMenger_2lvl.TochItem(object, item);
 	}
+	if (player.inventory[i] != 0 && player.inventory[i].object_index == obj_money) {
+		var _tmp = player.inventory[i];
+		player.inventory[i] = 0;
+		instance_destroy(_tmp);
+		object = ALL_EVENT_ITEMS.GLUTTONY
+		item = ALL_EVENT_ITEMS.BADSOUPE
+		obj_EventMenger_2lvl.TochItem(object, item);
+	}
 	else{
 		object = ALL_EVENT_ITEMS.GLUTTONY
 		obj_EventMenger_2lvl.TochItem(object);

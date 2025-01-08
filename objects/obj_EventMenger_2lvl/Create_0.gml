@@ -25,6 +25,7 @@ all_x = [
 	//{coord: true, left_x: door_right_x[0], right_x: door_right_x[1], dialog: obj_Dialog_level_2_door, importent: false},
 	{coord: false, with_item: ALL_EVENT_ITEMS.NONE, object: ALL_EVENT_ITEMS.GLUTTONY, dialog: obj_Dialog_level_2_2, importent: false},
 	{coord: false, with_item: ALL_EVENT_ITEMS.SOUPE, object: ALL_EVENT_ITEMS.GLUTTONY, dialog: obj_Dialog_level_2_3, importent: true},
+	{coord: false, with_item: ALL_EVENT_ITEMS.BADSOUPE, object: ALL_EVENT_ITEMS.GLUTTONY, dialog: obj_Dialog_level_2_badfood, importent: false},
 
 	
 ],

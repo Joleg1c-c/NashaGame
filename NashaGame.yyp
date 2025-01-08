@@ -74,6 +74,7 @@
     {"id":{"name":"obj_Dialog_level_2_1","path":"objects/obj_Dialog_level_2_1/obj_Dialog_level_2_1.yy",},},
     {"id":{"name":"obj_Dialog_level_2_2","path":"objects/obj_Dialog_level_2_2/obj_Dialog_level_2_2.yy",},},
     {"id":{"name":"obj_Dialog_level_2_3","path":"objects/obj_Dialog_level_2_3/obj_Dialog_level_2_3.yy",},},
+    {"id":{"name":"obj_Dialog_level_2_badfood","path":"objects/obj_Dialog_level_2_badfood/obj_Dialog_level_2_badfood.yy",},},
     {"id":{"name":"obj_Dialog_level_2_door","path":"objects/obj_Dialog_level_2_door/obj_Dialog_level_2_door.yy",},},
     {"id":{"name":"obj_Dialog_level_2_start","path":"objects/obj_Dialog_level_2_start/obj_Dialog_level_2_start.yy",},},
     {"id":{"name":"obj_Dialog_level_3_1","path":"objects/obj_Dialog_level_3_1/obj_Dialog_level_3_1.yy",},},
