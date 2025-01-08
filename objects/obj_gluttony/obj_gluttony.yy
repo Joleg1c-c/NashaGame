@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"gluttony",
-    "path":"sprites/gluttony/gluttony.yy",
+    "name":"Glutt",
+    "path":"sprites/Glutt/Glutt.yy",
   },
   "spriteMaskId":null,
   "visible":true,

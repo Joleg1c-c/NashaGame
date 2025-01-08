@@ -12,8 +12,8 @@
     "path":"folders/Объекты/DialogAndEvet/level_2.yy",
   },
   "parentObjectId":{
-    "name":"obj_DialogParent",
-    "path":"objects/obj_DialogParent/obj_DialogParent.yy",
+    "name":"obj_DialogParent_END",
+    "path":"objects/obj_DialogParent_END/obj_DialogParent_END.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

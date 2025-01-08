@@ -4,7 +4,8 @@ enum ALL_EVENT_ITEMS{
 	BOTELWATER,
 	NONE,
 	SOUPE,
-	GLUTTONY
+	GLUTTONY,
+	ANGRY
 }
 function Gonext(){
 	obj_EventCount.Next_1lvl();
